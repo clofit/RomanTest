@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  classificatoin_task:
+    restart: always
+    container_name: roman_test
+    image: image_roman_test
+    build: 
+      context: . 
+    volumes:
+      - .:/home/jovyan/work
+    ports:
+      - 8888:8888
